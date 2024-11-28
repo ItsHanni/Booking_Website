@@ -1,0 +1,62 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Màu nền nhẹ nhàng */
+    padding: 20px;
+  }
+  
+  .register form {
+    background-color: #ffffff; /* Màu nền cho form */
+    padding: 30px;
+    border-radius: 10px; /* Bo góc cho form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    width: 400px; /* Chiều rộng cố định */
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo cột */
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+  }
+  
+  .register h2 {
+    text-align: center;
+    color: #333; /* Màu chữ tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+  }
+  
+  .register input {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px; /* Padding cho input */
+    margin: 10px 0; /* Khoảng cách giữa các input */
+    border: 1px solid #ddd; /* Đường viền cho input */
+    border-radius: 5px; /* Bo góc cho input */
+    font-size: 16px; /* Kích thước chữ cho input */
+  }
+  
+  .register input:focus {
+    border-color: #007bff; /* Đổi màu đường viền khi focus */
+    outline: none; /* Ẩn outline mặc định */
+  }
+  
+  .register button {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px; /* Padding cho nút */
+    background-color: #007bff; /* Màu nền cho nút */
+    color: #ffffff; /* Màu chữ cho nút */
+    border: none; /* Ẩn đường viền */
+    border-radius: 5px; /* Bo góc cho nút */
+    font-size: 16px; /* Kích thước chữ cho nút */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+  }
+  
+  .register button:hover {
+    background-color: #0056b3; /* Đổi màu nút khi hover */
+  }
+  
+  .register img {
+    margin-top: 10px; /* Khoảng cách trên hình ảnh xem trước */
+    border-radius: 5px; /* Bo góc cho hình ảnh */
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của form */
+  }
+  

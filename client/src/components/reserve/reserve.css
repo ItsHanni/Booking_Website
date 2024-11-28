@@ -1,0 +1,147 @@
+.reserve {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Tối hơn để tạo cảm giác ấm cúng */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px); /* Hiệu ứng mờ cho nền */
+  z-index: 100; /* Đặt z-index cao hơn để hiển thị trên các phần tử khác */
+}
+
+.rContainer {
+  background-color: #fff; /* Màu trắng cho nền */
+  padding: 40px; /* Thêm khoảng cách cho nội dung */
+  border-radius: 12px; /* Bo tròn các góc */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ sâu hơn */
+  position: relative;
+  max-width: 600px; /* Giới hạn chiều rộng tối đa */
+  width: 90%; /* Đảm bảo responsive */
+  overflow: hidden; /* Ẩn phần thừa nếu có */
+}
+
+.rClose {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 24px; /* Tăng kích thước biểu tượng đóng */
+  color: #ff4d4d; /* Màu đỏ cho nút đóng */
+  transition: color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.rClose:hover {
+  color: #ff1a1a; /* Màu đỏ đậm khi hover */
+}
+
+.rTitle {
+  font-weight: 600;
+  font-size: 28px; /* Tăng kích thước tiêu đề */
+  margin-bottom: 20px;
+  color: #333; /* Màu chữ */
+  text-align: center; /* Canh giữa tiêu đề */
+}
+
+.rItem {
+  display: flex;
+  align-items: flex-start; /* Canh lề trên cùng */
+  gap: 15px; /* Giảm khoảng cách giữa các phần tử */
+  padding: 20px 0; /* Padding trên và dưới */
+  border-bottom: 1px solid #f0f0f0; /* Đường kẻ dưới mỗi phòng */
+}
+
+.rItem:last-child {
+  border-bottom: none; /* Không hiển thị đường kẻ cho phần tử cuối cùng */
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0; /* Đường viền cho phòng */
+  border-radius: 8px; /* Bo tròn các góc */
+  padding: 15px; /* Thêm padding cho mỗi phòng */
+  transition: transform 0.2s, box-shadow 0.2s; /* Hiệu ứng khi di chuột */
+  width: 100%; /* Chiều rộng linh hoạt */
+}
+
+.room:hover {
+  transform: translateY(-3px); /* Nâng lên khi hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Bóng đổ khi hover */
+}
+
+.rInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 100%; /* Giới hạn chiều rộng của thông tin phòng */
+}
+
+.rDesc {
+  font-weight: 300;
+  color: #555; /* Màu chữ nhạt hơn */
+  height: 60px; /* Chiều cao cố định cho mô tả phòng */
+  overflow: hidden; /* Ẩn phần thừa nếu nội dung quá dài */
+  text-overflow: ellipsis; /* Hiển thị dấu ba chấm nếu nội dung vượt quá chiều cao */
+  display: -webkit-box; /* Hiển thị box cho mô tả */
+  -webkit-box-orient: vertical; /* Hướng theo chiều dọc */
+  -webkit-line-clamp: 3; /* Giới hạn số dòng hiển thị */
+}
+
+.rPrice {
+  font-weight: bold;
+  color: #0071c2; /* Màu giá */
+  font-size: 18px; /* Kích thước chữ giá */
+}
+
+.rButton {
+  border: none;
+  padding: 14px 20px; /* Thay đổi kích thước nút */
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển màu và phóng to */
+}
+
+.rButton:hover {
+  background-color: #005fa3; /* Màu nút khi hover */
+  transform: translateY(-2px); /* Nâng lên khi hover */
+}
+
+.rButton:disabled {
+  background-color: #ccc; /* Màu nút khi bị vô hiệu hóa */
+  cursor: not-allowed; /* Con trỏ không cho phép */
+}
+.rSelectRooms {
+  display: flex; /* Sử dụng flexbox để dễ dàng căn giữa */
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  margin-top: 10px; /* Khoảng cách trên */
+}
+
+.room {
+  display: flex;
+  flex-direction: column; /* Sắp xếp theo chiều dọc */
+  align-items: center; /* Căn giữa */
+  border: 1px solid #e0e0e0; /* Đường viền cho phòng */
+  border-radius: 8px; /* Bo tròn các góc */
+  padding: 15px; /* Thêm padding cho mỗi phòng */
+  margin: 5px 0; /* Khoảng cách giữa các phòng */
+  width: 80%; /* Chiều rộng tương đối */
+}
+
+.room label {
+  font-weight: bold; /* Làm nổi bật số phòng */
+  font-size: 18px; /* Kích thước chữ cho số phòng */
+  margin-bottom: 5px; /* Khoảng cách dưới chữ */
+}
+
+.room input {
+  margin-top: 5px; /* Khoảng cách trên checkbox */
+}

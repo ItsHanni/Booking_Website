@@ -1,0 +1,48 @@
+.sidebar {
+  width: 200px; /* Giảm chiều rộng sidebar */
+  height: 100vh;
+  position: fixed; /* Cố định vị trí sidebar ở bên trái màn hình */
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 15px; /* Giảm padding tổng thể */
+}
+
+.sidebar-title {
+  font-size: 20px; /* Giảm kích thước chữ tiêu đề */
+  margin-bottom: 15px; /* Giảm khoảng cách dưới tiêu đề */
+  text-align: center;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1; /* Cho phép danh sách kéo dài */
+}
+
+.sidebar-link {
+  display: block;
+  padding: 8px 10px; /* Giảm padding cho liên kết */
+  margin-bottom: 8px; /* Giảm khoảng cách giữa các liên kết */
+  font-size: 16px; /* Giảm kích thước chữ cho liên kết */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background-color: #575757;
+}
+
+.footer {
+  margin-top: auto; /* Đẩy footer xuống dưới */
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px; /* Giảm kích thước chữ cho footer */
+  color: #aaa;
+}

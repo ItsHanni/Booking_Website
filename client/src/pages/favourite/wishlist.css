@@ -1,0 +1,151 @@
+/* Thùng chứa danh sách yêu thích */
+.wishlist-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.wishlist-container:hover {
+  transform: translateY(-5px); /* Nâng container khi hover */
+}
+
+.wishlist-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Các phần tử trong danh sách yêu thích */
+.wishlist-item {
+  display: flex; /* Dùng flexbox để sắp xếp */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wishlist-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist-item h3 {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.wishlist-item p {
+  font-size: 1rem;
+  margin: 5px 0;
+  flex: 1; /* Cho phép phần mô tả chiếm không gian còn lại */
+  padding-left: 15px; /* Khoảng cách giữa ảnh và text */
+}
+
+/* Giới hạn kích thước ảnh và hiển thị ảnh theo hình vuông */
+.wishlist-item img {
+  width: 100px; /* Đặt chiều rộng cố định */
+  height: 100px; /* Đặt chiều cao cố định để ảnh có dạng vuông */
+  object-fit: cover; /* Cắt ảnh sao cho phù hợp */
+  border-radius: 8px; /* Đặt bo góc cho ảnh */
+  transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng zoom ảnh khi hover */
+.wishlist-item img:hover {
+  transform: scale(1.05); /* Zoom ảnh khi hover */
+}
+
+.wishlist-status {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.wishlist-status.favorited {
+  color: #27ae60;
+}
+
+.wishlist-status.removed {
+  color: #e74c3c;
+}
+
+/* Nút thanh toán */
+.payment-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.payment-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Nút xóa yêu thích */
+.remove-button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.remove-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Media queries cho tính responsive */
+@media (max-width: 768px) {
+  .wishlist-container {
+    padding: 15px;
+  }
+
+  .wishlist-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .wishlist-item {
+    padding: 15px;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc trên thiết bị di động */
+    align-items: flex-start;
+  }
+
+  .wishlist-item h3 {
+    font-size: 1.3rem;
+  }
+
+  .wishlist-item p {
+    font-size: 0.9rem;
+  }
+
+  .wishlist-item img {
+    width: 80px; /* Đặt kích thước ảnh nhỏ hơn cho thiết bị di động */
+    height: 80px;
+  }
+}

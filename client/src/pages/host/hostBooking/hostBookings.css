@@ -1,0 +1,113 @@
+.host-bookings-page {
+  display: flex;
+}
+
+.host-bookings-container {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 220px; /* Đặt khoảng cách với sidebar */
+} 
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse; /* Để loại bỏ khoảng cách giữa các ô */
+  margin-top: 20px; /* Khoảng cách từ tiêu đề đến bảng */
+}
+
+.bookings-table th, .bookings-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.bookings-table th {
+  background-color: #f2f2f2;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.rejected-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rejected-button:hover {
+  background-color: #e60000;
+}
+.duyet-button:hover {
+  background-color: #2d9772;
+}
+
+.duyet-button {
+  background-color: #2d9772;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.paid-button:hover {
+  background-color: #2d9772;
+}
+
+.paid-button {
+  background-color: #2d9772;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check-in-button:hover {
+  background-color: #2d8097;
+}
+
+.check-in-button {
+  background-color: #2d8097;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check-out-button:hover {
+  background-color: #3b4a99;
+}
+
+.check-out-button {
+  background-color: #3b4a99;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.no-bookings {
+  text-align: center;
+  color: #888;
+}
+
+.loader {
+  text-align: center;
+  color: #007bff;
+}

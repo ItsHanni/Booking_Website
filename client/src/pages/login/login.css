@@ -1,0 +1,84 @@
+/* login.css */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Chiếm toàn bộ chiều cao của viewport */
+  background: linear-gradient(135deg, #f0f0f0, #d9d9d9); /* Màu nền chuyển động nhẹ */
+  animation: backgroundAnimation 10s ease infinite; /* Hiệu ứng nền chuyển động */
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #f0f0f0;
+  }
+  50% {
+    background-color: #e0e0e0;
+  }
+  100% {
+    background-color: #f0f0f0;
+  }
+}
+
+.lContainer {
+  background-color: white; /* Nền trắng cho container */
+  padding: 30px; /* Padding cho container */
+  border-radius: 8px; /* Bo góc cho container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho container */
+  width: 100%; /* Đặt chiều rộng của container là 100% */
+  max-width: 400px; /* Chiều rộng tối đa của container */
+  box-sizing: border-box; /* Đảm bảo padding và border được tính trong width */
+  opacity: 0; /* Ẩn ban đầu */
+  transform: scale(0.8); /* Thu nhỏ ban đầu */
+  animation: fadeInUp 0.5s forwards; /* Hiệu ứng phóng to khi tải trang */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1; /* Hiện lên hoàn toàn */
+    transform: scale(1); /* Phóng to tới kích thước bình thường */
+  }
+}
+
+.lInput {
+  width: 100%; /* Chiều rộng đầy đủ */
+  padding: 10px; /* Padding cho input */
+  margin: 10px 0; /* Margin cho khoảng cách giữa các input */
+  border: 1px solid #ccc; /* Viền cho input */
+  border-radius: 4px; /* Bo góc cho input */
+  font-size: 16px; /* Kích thước font */
+  box-sizing: border-box; /* Đảm bảo padding và border được tính trong width */
+}
+
+.lInput:focus {
+  border-color: #007bff; /* Đổi màu viền khi focus */
+  outline: none; /* Tắt outline mặc định */
+}
+
+.lButton {
+  width: 100%; /* Chiều rộng đầy đủ */
+  padding: 10px; /* Padding cho button */
+  background-color: #007bff; /* Màu nền cho button */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Không viền */
+  border-radius: 4px; /* Bo góc cho button */
+  font-size: 16px; /* Kích thước font */
+  cursor: pointer; /* Con trỏ khi hover */
+  transition: transform 0.2s; /* Thêm hiệu ứng chuyển động cho nút */
+}
+
+.lButton:disabled {
+  background-color: #cccccc; /* Màu nền cho button khi disabled */
+  cursor: not-allowed; /* Con trỏ không được phép */
+}
+
+.lButton:hover {
+  background-color: #0056b3; /* Đổi màu nền khi hover */
+  transform: translateY(-2px); /* Nhấc nút lên một chút */
+}
+
+span {
+  color: red; /* Màu chữ đỏ cho thông báo lỗi */
+  display: block; /* Hiển thị thông báo lỗi trên một dòng mới */
+  margin-top: 10px; /* Khoảng cách trên */
+}

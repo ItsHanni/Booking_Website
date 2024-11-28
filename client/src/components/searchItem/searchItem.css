@@ -1,0 +1,128 @@
+.searchItem {
+  border: 1px solid lightgray;
+  padding: 15px; /* Thay đổi padding để tạo không gian thoải mái hơn */
+  border-radius: 8px; /* Bo tròn góc để tạo cảm giác mềm mại */
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng cho item */
+  transition: transform 0.2s;
+}
+
+.searchItem:hover {
+  transform: translateY(-2px); /* Hiệu ứng nổi khi hover */
+}
+
+.siImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px; /* Bo tròn góc cho ảnh */
+}
+
+.siDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Giảm khoảng cách giữa các phần tử */
+  flex: 2;
+}
+
+.siDistance {
+  color: black;
+}
+
+.siTitle {
+  font-size: 20px;
+  color: #0071c2;
+  margin-bottom: 5px; /* Tăng khoảng cách dưới tiêu đề */
+}
+
+.siTaxiOp {
+  font-size: 12px;
+  background-color: #008009;
+  color: white;
+  padding: 4px 8px; /* Tăng padding cho taxi option */
+  border-radius: 5px;
+  display: inline-block; /* Giúp căn chỉnh tốt hơn */
+}
+
+.siSubtitle {
+  font-size: 12px;
+  font-weight: bold;
+  color: #0071c2;
+}
+
+.siFeatures {
+  font-size: 12px;
+  color: black;
+}
+
+.siCancelOp {
+  font-size: 12px;
+  color: #008009;
+  font-weight: bold;
+}
+
+.siCancelOpSubtitle {
+  font-size: 12px;
+  color: #008009;
+}
+
+.siDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.siRating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.siRating > span {
+  font-weight: 500;
+}
+
+.siRating > button {
+  background-color: #003580;
+  color: white;
+  padding: 5px 10px; /* Tăng padding cho nút rating */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Bo tròn cho nút rating */
+}
+
+.siDetailTexts {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.siPrice {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.siTaxOp {
+  font-size: 12px;
+  color: gray;
+}
+
+.siCheckButton {
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s; /* Hiệu ứng chuyển màu */
+}
+
+.siCheckButton:hover {
+  background-color: #0056b3; /* Màu nút khi hover */
+}

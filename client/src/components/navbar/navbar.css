@@ -1,0 +1,111 @@
+/* navbar.css */
+
+.navbar {
+  height: 50px;
+  background-color: #003580; /* Màu nền của navbar */
+  display: flex;
+  justify-content: center; /* Căn giữa navbar */
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px; /* Giới hạn chiều rộng của navbar */
+  color: white; /* Màu chữ cho navbar */
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between; /* Căn giữa các phần tử trong navContainer */
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 24px; /* Kích thước chữ cho logo */
+  letter-spacing: 1px; /* Khoảng cách giữa các chữ cái */
+}
+
+.navButton {
+  margin-left: 20px; /* Khoảng cách giữa các nút */
+  border: none; /* Không có đường viền */
+  padding: 5px 10px; /* Padding cho nút */
+  cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+  color: #003580; /* Màu chữ cho nút */
+  background-color: #ffffff; /* Màu nền cho nút */
+  border-radius: 4px; /* Bo tròn góc cho nút */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.navButton:hover {
+  background-color: #f0f0f0; /* Màu nền khi hover */
+}
+
+.navUser {
+  position: relative; /* Để định vị dropdown */
+  cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+  color: white; /* Màu chữ cho tên người dùng */
+}
+
+.dropdown {
+  position: absolute; /* Để dropdown xuất hiện ở dưới navUser */
+  background-color: #fff; /* Màu nền cho dropdown */
+  border-radius: 4px; /* Bo tròn góc cho dropdown */
+  border: 1px solid #ccc; /* Đường viền cho dropdown */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Đổ bóng cho dropdown */
+  z-index: 100; /* Đảm bảo dropdown xuất hiện trên các phần tử khác */
+  margin-top: 5px; /* Khoảng cách từ tên người dùng đến dropdown */
+  width: 200px; /* Chiều rộng của dropdown */
+  opacity: 0; /* Ẩn dropdown ban đầu */
+  visibility: hidden; /* Ẩn dropdown ban đầu */
+  transition: opacity 0.2s ease, visibility 0.2s ease; /* Hiệu ứng chuyển đổi cho dropdown */
+}
+
+.dropdownItem {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.2s;
+  border-radius: 4px;
+}
+.dropdownItem:hover {
+  background-color: #f0f0f0; /* Nền nổi bật khi hover */
+}
+
+.navUser:hover .dropdown {
+  opacity: 1; /* Hiện dropdown khi hover vào navUser */
+  visibility: visible; /* Hiện dropdown khi hover vào navUser */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px; /* Kích thước logo */
+  margin-right: 10px;
+}
+
+
+.dropdownItem {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s; /* Chuyển đổi màu chữ */
+  border-radius: 4px; /* Bo tròn góc */
+}
+
+.logoutButton {
+  display: block; /* Đảm bảo nó hiển thị như block */
+  padding: 10px 15px; /* Giữ cùng padding với các mục khác */
+  text-decoration: none; /* Bỏ gạch chân */
+  color: black; /* Màu chữ ban đầu */
+  font-weight: bold; /* Làm nổi bật chữ */
+  border-radius: 4px; /* Bo tròn góc */
+  transition: color 0.2s; /* Hiệu ứng chuyển đổi cho màu chữ */
+}
+
+.logoutButton:hover {
+  color: #ff3b3b; /* Màu đỏ khi hover */
+}

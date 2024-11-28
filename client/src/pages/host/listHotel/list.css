@@ -1,0 +1,50 @@
+.list-container {
+    margin-left: 260px; /* Cách Sidebar */
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .hotel-table {
+    width: 100%; /* Để bảng chiếm hết chiều rộng */
+    border-collapse: collapse; /* Bỏ khoảng cách giữa các ô */
+  }
+  
+  .hotel-table th, .hotel-table td {
+    border: 1px solid #ddd; /* Đường viền cho ô */
+    padding: 8px; /* Khoảng cách bên trong ô */
+    text-align: center; /* Căn giữa nội dung ô */
+  }
+  
+  .hotel-table th {
+    background-color: #f2f2f2; /* Nền màu cho hàng tiêu đề */
+  }
+  
+  .hotel-image {
+    width: 50px; /* Kích thước hình ảnh */
+    height: auto; /* Đảm bảo chiều cao tự động */
+  }
+  
+  .update-button,
+  .delete-button {
+    padding: 5px 10px; /* Khoảng cách bên trong nút */
+    margin: 0 5px; /* Khoảng cách giữa các nút */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .update-button {
+    background-color: #4caf50; /* Màu nền cho nút cập nhật */
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #f44336; /* Màu nền cho nút xóa */
+    color: white;
+  }
+  
